@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zhost Education</title>
+    <link
+      rel="shortcut icon"
+      href="/assets/images/favicon_zhost.webp"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Danh sách sản phẩm</h1>
+
+      <div class="product-grid">
+        <div class="card">
+          <div class="title">
+            <div>
+              <h3>
+                <i class="fa fa-server spec-icon" aria-hidden="true"></i
+                >Z-Student 01
+              </h3>
+              <div class="price" data-base="3000">
+                <div class="from">Chỉ từ</div>
+                <div class="amount">3.000₫</div>
+                <div class="per-month">/tháng</div>
+              </div>
+            </div>
+            <div>
+              <img src="/assets/images/hosting-icon.webp" alt="Z-Student 01" />
+            </div>
+          </div>
+          <div class="specs">
+            <div class="spec">
+              <i class="fa fa-microchip spec-icon" aria-hidden="true"></i>
+              <p><strong>CPU:</strong> 01 Core</p>
+            </div>
+            <div class="spec">
+              <i class="fa fa-memory spec-icon" aria-hidden="true"></i>
+              <span><strong>RAM:</strong> 01 GB</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-sd-card spec-icon" aria-hidden="true"></i>
+              <span><strong>Dung lượng:</strong> 500MB SSD</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-globe spec-icon" aria-hidden="true"></i>
+              <span><strong>Website:</strong> 1</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-database spec-icon" aria-hidden="true"></i>
+              <span><strong>SQL Database:</strong> Không giới hạn</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-exchange spec-icon" aria-hidden="true"></i>
+              <span><strong>Data Transfer:</strong> Không giới hạn</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-cog spec-icon" aria-hidden="true"></i>
+              <span><strong>Quản lý:</strong> DirectAdmin</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-history spec-icon" aria-hidden="true"></i>
+              <span><strong>Jetbackup:</strong> Hàng ngày lưu 14 ngày</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-sync-alt spec-icon" aria-hidden="true"></i>
+              <span><strong>DR Backup:</strong> Hàng ngày lưu 07 ngày</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-shield-alt spec-icon" aria-hidden="true"></i>
+              <span><strong>Diệt mã độc tự động:</strong> Có (Imunify360)</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-cloud spec-icon" aria-hidden="true"></i>
+              <span><strong>CloudLinux:</strong> Có (Chống Local Attack)</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-lock spec-icon" aria-hidden="true"></i>
+              <span><strong>SSL miễn phí:</strong> Có (Let's Encrypt)</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-server spec-icon" aria-hidden="true"></i>
+              <span><strong>Web Server:</strong> Litespeed Enterprise</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-undo spec-icon" aria-hidden="true"></i>
+              <span><strong>Hoàn tiền:</strong> Trong 30 ngày</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-life-ring spec-icon" aria-hidden="true"></i>
+              <span><strong>Hỗ trợ:</strong> Miễn phí 24/7/365</span>
+            </div>
+          </div>
+
+          <label class="payment-label" for="cycle-a"
+            ><i
+              >Kỳ hạn thanh toán
+              <span style="font-size: smaller; color: #e03127"
+                >(Giá chưa bao gồm VAT)</span
+              ></i
+            ></label
+          >
+          <select id="cycle-a" class="payment-cycle">
+            <option value="monthly">1 tháng x 3,000/tháng</option>
+            <option value="quarterly">3 tháng x 3,000/tháng</option>
+            <option value="semi-annually">6 tháng x 3,000/tháng</option>
+          </select>
+          <button class="order-btn">
+            Đặt mua
+            <i
+              class="fa fa-arrow-right spec-icon"
+              aria-hidden="true"
+              style="color: white"
+            ></i>
+          </button>
+        </div>
+
+        <div class="card">
+          <div class="title">
+            <div>
+              <h3>
+                <i class="fa fa-server spec-icon" aria-hidden="true"></i
+                >Z-Student 02
+              </h3>
+              <div class="price" data-base="5000">
+                <div class="from">Chỉ từ</div>
+                <div class="amount">5.000₫</div>
+                <div class="per-month">/tháng</div>
+              </div>
+            </div>
+            <div>
+              <img src="/assets/images/hosting-icon.webp" alt="Z-Student 02" />
+            </div>
+          </div>
+          <div class="specs">
+            <div class="spec">
+              <i class="fa fa-microchip spec-icon" aria-hidden="true"></i>
+              <p><strong>CPU:</strong> 01 Core</p>
+            </div>
+            <div class="spec">
+              <i class="fa fa-memory spec-icon" aria-hidden="true"></i>
+              <span><strong>RAM:</strong> 01 GB</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-sd-card spec-icon" aria-hidden="true"></i>
+              <span><strong>Dung lượng:</strong> 01 GB SSD</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-globe spec-icon" aria-hidden="true"></i>
+              <span><strong>Website:</strong> 1</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-database spec-icon" aria-hidden="true"></i>
+              <span><strong>SQL Database:</strong> Không giới hạn</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-exchange spec-icon" aria-hidden="true"></i>
+              <span><strong>Data Transfer:</strong> Không giới hạn</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-cog spec-icon" aria-hidden="true"></i>
+              <span><strong>Quản lý:</strong> DirectAdmin</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-history spec-icon" aria-hidden="true"></i>
+              <span><strong>Jetbackup:</strong> Hàng ngày lưu 14 ngày</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-sync-alt spec-icon" aria-hidden="true"></i>
+              <span><strong>DR Backup:</strong> Hàng ngày lưu 07 ngày</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-shield-alt spec-icon" aria-hidden="true"></i>
+              <span><strong>Diệt mã độc tự động:</strong> Có (Imunify360)</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-cloud spec-icon" aria-hidden="true"></i>
+              <span><strong>CloudLinux:</strong> Có (Chống Local Attack)</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-lock spec-icon" aria-hidden="true"></i>
+              <span><strong>SSL miễn phí:</strong> Có (Let's Encrypt)</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-server spec-icon" aria-hidden="true"></i>
+              <span><strong>Web Server:</strong> Litespeed Enterprise</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-undo spec-icon" aria-hidden="true"></i>
+              <span><strong>Hoàn tiền:</strong> Trong 30 ngày</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-life-ring spec-icon" aria-hidden="true"></i>
+              <span><strong>Hỗ trợ:</strong> Miễn phí 24/7/365</span>
+            </div>
+          </div>
+
+          <label class="payment-label" for="cycle-a"
+            ><i
+              >Kỳ hạn thanh toán
+              <span style="font-size: smaller; color: #e03127"
+                >(Giá chưa bao gồm VAT)</span
+              ></i
+            ></label
+          >
+          <select id="cycle-a" class="payment-cycle">
+            <option value="monthly">1 tháng x 5.000/tháng</option>
+            <option value="quarterly">3 tháng x 5.000/tháng</option>
+            <option value="semi-annually">6 tháng x 5.000/tháng</option>
+          </select>
+          <button class="order-btn">
+            Đặt mua
+            <i
+              class="fa fa-arrow-right spec-icon"
+              aria-hidden="true"
+              style="color: white"
+            ></i>
+          </button>
+        </div>
+
+        <div class="card">
+          <div class="title">
+            <div>
+              <h3>
+                <i class="fa fa-server spec-icon" aria-hidden="true"></i
+                >Z-Student 03
+              </h3>
+              <div class="price" data-base="7000">
+                <div class="from">Chỉ từ</div>
+                <div class="amount">7.000₫</div>
+                <div class="per-month">/tháng</div>
+              </div>
+            </div>
+            <div>
+              <img src="/assets/images/hosting-icon.webp" alt="Z-Student 03" />
+            </div>
+          </div>
+          <div class="specs">
+            <div class="spec">
+              <i class="fa fa-microchip spec-icon" aria-hidden="true"></i>
+              <p><strong>CPU:</strong> 02 Core</p>
+            </div>
+            <div class="spec">
+              <i class="fa fa-memory spec-icon" aria-hidden="true"></i>
+              <span><strong>RAM:</strong> 02 GB</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-sd-card spec-icon" aria-hidden="true"></i>
+              <span><strong>Dung lượng:</strong> 2GB SSD</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-globe spec-icon" aria-hidden="true"></i>
+              <span><strong>Website:</strong> 1</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-database spec-icon" aria-hidden="true"></i>
+              <span><strong>SQL Database:</strong> Không giới hạn</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-exchange spec-icon" aria-hidden="true"></i>
+              <span><strong>Data Transfer:</strong> Không giới hạn</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-cog spec-icon" aria-hidden="true"></i>
+              <span><strong>Quản lý:</strong> DirectAdmin</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-history spec-icon" aria-hidden="true"></i>
+              <span><strong>Jetbackup:</strong> Hàng ngày lưu 14 ngày</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-sync-alt spec-icon" aria-hidden="true"></i>
+              <span><strong>DR Backup:</strong> Hàng ngày lưu 07 ngày</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-shield-alt spec-icon" aria-hidden="true"></i>
+              <span><strong>Diệt mã độc tự động:</strong> Có (Imunify360)</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-cloud spec-icon" aria-hidden="true"></i>
+              <span><strong>CloudLinux:</strong> Có (Chống Local Attack)</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-lock spec-icon" aria-hidden="true"></i>
+              <span><strong>SSL miễn phí:</strong> Có (Let's Encrypt)</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-server spec-icon" aria-hidden="true"></i>
+              <span><strong>Web Server:</strong> Litespeed Enterprise</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-undo spec-icon" aria-hidden="true"></i>
+              <span><strong>Hoàn tiền:</strong> Trong 30 ngày</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-life-ring spec-icon" aria-hidden="true"></i>
+              <span><strong>Hỗ trợ:</strong> Miễn phí 24/7/365</span>
+            </div>
+          </div>
+
+          <label class="payment-label" for="cycle-a"
+            ><i
+              >Kỳ hạn thanh toán
+              <span style="font-size: smaller; color: #e03127"
+                >(Giá chưa bao gồm VAT)</span
+              ></i
+            ></label
+          >
+          <select id="cycle-a" class="payment-cycle">
+            <option value="monthly">1 tháng x 7,000/tháng</option>
+            <option value="quarterly">3 tháng x 7,000/tháng</option>
+            <option value="semi-annually">6 tháng x 7,000/tháng</option>
+          </select>
+          <button class="order-btn">
+            Đặt mua
+            <i
+              class="fa fa-arrow-right spec-icon"
+              aria-hidden="true"
+              style="color: white"
+            ></i>
+          </button>
+        </div>
+
+        <div class="card">
+          <div class="title">
+            <div>
+              <h3>
+                <i class="fa fa-server spec-icon" aria-hidden="true"></i
+                >Z-Student 04
+              </h3>
+              <div class="price" data-base="19000">
+                <div class="from">Chỉ từ</div>
+                <div class="amount">19.000₫</div>
+                <div class="per-month">/tháng</div>
+              </div>
+            </div>
+            <div>
+              <img src="/assets/images/hosting-icon.webp" alt="Z-Student 04" />
+            </div>
+          </div>
+          <div class="specs">
+            <div class="spec">
+              <i class="fa fa-microchip spec-icon" aria-hidden="true"></i>
+              <p><strong>CPU:</strong> 02 Core</p>
+            </div>
+            <div class="spec">
+              <i class="fa fa-memory spec-icon" aria-hidden="true"></i>
+              <span><strong>RAM:</strong> 02 GB</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-sd-card spec-icon" aria-hidden="true"></i>
+              <span><strong>Dung lượng:</strong> 2GB SSD</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-globe spec-icon" aria-hidden="true"></i>
+              <span><strong>Website:</strong> 2</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-database spec-icon" aria-hidden="true"></i>
+              <span><strong>SQL Database:</strong> Không giới hạn</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-exchange spec-icon" aria-hidden="true"></i>
+              <span><strong>Data Transfer:</strong> Không giới hạn</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-cog spec-icon" aria-hidden="true"></i>
+              <span><strong>Quản lý:</strong> DirectAdmin</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-history spec-icon" aria-hidden="true"></i>
+              <span><strong>Jetbackup:</strong> Hàng ngày lưu 14 ngày</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-sync-alt spec-icon" aria-hidden="true"></i>
+              <span><strong>DR Backup:</strong> Hàng ngày lưu 07 ngày</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-shield-alt spec-icon" aria-hidden="true"></i>
+              <span><strong>Diệt mã độc tự động:</strong> Có (Imunify360)</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-cloud spec-icon" aria-hidden="true"></i>
+              <span><strong>CloudLinux:</strong> Có (Chống Local Attack)</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-lock spec-icon" aria-hidden="true"></i>
+              <span><strong>SSL miễn phí:</strong> Có (Let's Encrypt)</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-server spec-icon" aria-hidden="true"></i>
+              <span><strong>Web Server:</strong> Litespeed Enterprise</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-undo spec-icon" aria-hidden="true"></i>
+              <span><strong>Hoàn tiền:</strong> Trong 30 ngày</span>
+            </div>
+            <div class="spec">
+              <i class="fa fa-life-ring spec-icon" aria-hidden="true"></i>
+              <span><strong>Hỗ trợ:</strong> Miễn phí 24/7/365</span>
+            </div>
+          </div>
+
+          <label class="payment-label" for="cycle-a"
+            ><i
+              >Kỳ hạn thanh toán
+              <span style="font-size: smaller; color: #e03127"
+                >(Giá chưa bao gồm VAT)</span
+              ></i
+            ></label
+          >
+          <select id="cycle-a" class="payment-cycle">
+            <option value="monthly">1 tháng x 19,000/tháng</option>
+            <option value="quarterly">3 tháng x 19,000/tháng</option>
+            <option value="semi-annually">6 tháng x 19,000/tháng</option>
+          </select>
+          <button class="order-btn">
+            Đặt mua
+            <i
+              class="fa fa-arrow-right spec-icon"
+              aria-hidden="true"
+              style="color: white"
+            ></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Partners Carousel Section -->
+      <div class="partners-section">
+        <h2>Các trường đại học và đối tác của chúng tôi</h2>
+        <div class="carousel-wrapper">
+          <button class="carousel-prev" aria-label="Previous partner">
+            <i class="fa fa-chevron-left"></i>
+          </button>
+          <div class="carousel-container"></div>
+          <button class="carousel-next" aria-label="Next partner">
+            <i class="fa fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="document-card">
+        <div class="doc-header">
+          <h2>Hướng dẫn sử dụng Hosting Student</h2>
+          <div class="doc-count">
+            5 tài liệu <i class="fa fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <div class="doc-category">
+          <div class="doc-category-title" onclick="toggleDocCategory(this)">
+            <i class="fa fa-folder doc-folder-icon"></i>
+            <span>Bắt Đầu Sử Dụng Hosting Student</span>
+          </div>
+          <div class="doc-items" style="display: none">
+            <a href="#" class="doc-item">
+              <i class="fa fa-file-lines"></i>
+              Hướng Dẫn Cài Theme & Plugin WordPress Trên Hosting Student
+            </a>
+            <a href="#" class="doc-item">
+              <i class="fa fa-file-lines"></i>
+              Hướng Dẫn Cài WordPress Trên Hosting Student
+            </a>
+            <a href="#" class="doc-item">
+              <i class="fa fa-file-lines"></i>
+              Hướng Dẫn Làm Quen Tính Năng Hosting Student Zhost
+            </a>
+            <a href="#" class="doc-item">
+              <i class="fa fa-file-lines"></i>
+              Hướng Dẫn Làm Quen Tính Năng Hosting Student Zhost
+            </a>
+            <a href="#" class="doc-item">
+              <i class="fa fa-file-lines"></i>
+              Hướng Dẫn Làm Quen Tính Năng Hosting Student Zhost
+            </a>
+          </div>
+        </div>
+
+        <div class="doc-category">
+          <div class="doc-category-title" onclick="toggleDocCategory(this)">
+            <i class="fa fa-folder doc-folder-icon"></i>
+            <span>Quy trình đăng ký & kích hoạt</span>
+          </div>
+          <div class="doc-items" style="display: none">
+            <a href="#" class="doc-item">
+              <i class="fa fa-file-lines"></i>
+              Hướng Dẫn Đăng Ký Hosting Student Tại Zhost
+            </a>
+            <a href="#" class="doc-item">
+              <i class="fa fa-file-lines"></i>
+              Hướng Dẫn Khác (Thêm tài liệu khác nếu cần)
+            </a>
+            <a href="#" class="doc-item">
+              <i class="fa fa-file-lines"></i>
+              Hướng Dẫn Làm Quen Tính Năng Hosting Student Zhost
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/spec-toggle.js"></script>
+    <script src="/js/doc-counter.js"></script>
+    <script src="/js/carousel.js"></script>
+  </body>
+</html>

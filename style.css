@@ -118,15 +118,20 @@ h1 {
 }
 
 .carousel-container {
-  display: flex;
   flex: 1;
   position: relative;
   min-height: 140px;
   min-width: 0;
   overflow: hidden;
-  transition: transform 0.5s ease-in-out;
-  gap: 30px;
   padding: 0 10px;
+}
+
+.carousel-track {
+  display: flex;
+  align-items: stretch;
+  gap: 30px;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
 }
 
 .carousel-item {

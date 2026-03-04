@@ -1,87 +1,87 @@
 const partners = [
   {
     name: "ĐH Bách Khoa Hà Nội",
-    logo: "/assets/logos/daihocbachkhoahanoi.webp",
+    logo: "https://zhost.education/assets/logos/daihocbachkhoahanoi.webp",
   },
   {
     name: "ĐH Quốc Gia Hà Nội",
-    logo: "/assets/logos/daihocquocgiahanoi.webp",
+    logo: "https://zhost.education/assets/logos/daihocquocgiahanoi.webp",
   },
   {
     name: "ĐH Kinh tế Quốc dân",
-    logo: "/assets/logos/daihockinhtequocdan.webp",
+    logo: "https://zhost.education/assets/logos/daihockinhtequocdan.webp",
   },
   {
     name: "ĐH Quốc Gia TP.HCM",
-    logo: "/assets/logos/daihocquocgiatphcm.webp",
+    logo: "https://zhost.education/assets/logos/daihocquocgiatphcm.webp",
   },
   {
     name: "Học viện Chính trị Quốc gia Hồ Chí Minh",
-    logo: "/assets/logos/hocvienchinhtriquocgiatphcm.webp",
+    logo: "https://zhost.education/assets/logos/hocvienchinhtriquocgiatphcm.webp",
   },
   {
     name: "ĐH Huế",
-    logo: "/assets/logos/daihochue.webp",
+    logo: "https://zhost.education/assets/logos/daihochue.webp",
   },
   {
     name: "ĐH Cần Thơ",
-    logo: "/assets/logos/daihoccantho.webp",
+    logo: "https://zhost.education/assets/logos/daihoccantho.webp",
   },
   {
     name: "Học viện Bưu chính Viễn thông",
-    logo: "/assets/logos/hocvienbuuchinhvienthong.webp",
+    logo: "https://zhost.education/assets/logos/hocvienbuuchinhvienthong.webp",
   },
   {
     name: "VinSchool",
-    logo: "/assets/logos/vinschool.webp",
+    logo: "https://zhost.education/assets/logos/vinschool.webp",
   },
   {
     name: "Vin University",
-    logo: "/assets/logos/vinuni.webp",
+    logo: "https://zhost.education/assets/logos/vinuni.webp",
   },
   {
     name: "EQUEST",
-    logo: "/assets/logos/equest.webp",
+    logo: "https://zhost.education/assets/logos/equest.webp",
   },
   {
     name: "ĐH Công Nghệ",
-    logo: "/assets/logos/uet.webp",
+    logo: "https://zhost.education/assets/logos/uet.webp",
   },
   {
     name: "ĐH Thương Mại",
-    logo: "/assets/logos/tmu.webp",
+    logo: "https://zhost.education/assets/logos/tmu.webp",
   },
   {
     name: "ĐH FPT",
-    logo: "/assets/logos/fpt.webp",
+    logo: "https://zhost.education/assets/logos/fpt.webp",
   },
   {
     name: "ĐH Y Hà Nội",
-    logo: "/assets/logos/daihocyhanoi.webp",
+    logo: "https://zhost.education/assets/logos/daihocyhanoi.webp",
   },
   {
     name: "ĐH Dược Hà Nội",
-    logo: "/assets/logos/daihocduochanoi.webp",
+    logo: "https://zhost.education/assets/logos/daihocduochanoi.webp",
   },
   {
     name: "ĐH Sư Phạm Hà Nội",
-    logo: "/assets/logos/daihocsuphamhanoi.webp",
+    logo: "https://zhost.education/assets/logos/daihocsuphamhanoi.webp",
   },
   {
     name: "Học viện Ngoại Giao Việt Nam",
-    logo: "/assets/logos/hocvienngoaigiaovietnam.webp",
+    logo: "https://zhost.education/assets/logos/hocvienngoaigiaovietnam.webp",
   },
   {
     name: "ĐH Tôn Đức Thắng",
-    logo: "/assets/logos/daihoctonducthang.webp",
+    logo: "https://zhost.education/assets/logos/daihoctonducthang.webp",
   },
   {
     name: "ĐH Sài Gòn",
-    logo: "/assets/logos/daihocsaigon.webp",
+    logo: "https://zhost.education/assets/logos/daihocsaigon.webp",
   },
   {
     name: "ĐH Xây Dựng",
-    logo: "/assets/logos/daihocxaydung.webp",
+    logo: "https://zhost.education/assets/logos/daihocxaydung.webp",
   },
 ];
 

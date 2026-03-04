@@ -10,6 +10,10 @@ body {
   padding: 40px 20px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1500px;
   margin: auto;
@@ -67,6 +71,14 @@ h1 {
   padding: 11px 16px;
   border-radius: 8px;
   font-weight: 600;
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.hero-cta:hover {
+  background: #d62828;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(224, 49, 39, 0.28);
 }
 
 .quick-highlight {
@@ -395,6 +407,7 @@ h1 {
   font-weight: 500;
   color: #333;
   user-select: none;
+  transition: color 0.25s ease, transform 0.25s ease;
 }
 
 .doc-category-title:hover {
@@ -405,11 +418,26 @@ h1 {
   color: #e63946;
   font-size: 16px;
   min-width: 20px;
+  transition: transform 0.3s ease;
 }
 
 .doc-items {
   padding-left: 30px;
   margin-top: 8px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: max-height 0.35s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+
+.doc-items.expanded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.doc-category-title.expanded .doc-folder-icon {
+  transform: rotate(-8deg) scale(1.05);
 }
 
 .doc-item {
@@ -420,11 +448,12 @@ h1 {
   font-size: 14px;
   color: #333;
   text-decoration: none;
-  transition: 0.2s;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .doc-item:hover {
   color: #e63946;
+  transform: translateX(4px);
 }
 
 .doc-item i {
@@ -537,9 +566,26 @@ h1 {
   color: #e03127;
   cursor: pointer;
   text-decoration: none !important;
+  transition: color 0.25s ease;
 }
+
+.spec-extra-group {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: max-height 0.35s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+
+.spec-extra-group.expanded {
+  max-height: 800px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .toggle-specs .spec-toggle-icon {
   margin-left: 4px;
+  transition: transform 0.25s ease, color 0.25s ease;
 }
 .toggle-specs:hover {
   color: #d62828;

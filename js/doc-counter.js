@@ -4,8 +4,7 @@ function updateDocumentCount() {
   const docCountEl = document.querySelector(".doc-count");
 
   if (docCountEl && count > 0) {
-    const countText = docCountEl.querySelector("span") || docCountEl;
-    countText.textContent = count + " tài liệu ";
+    docCountEl.innerHTML = `${count} tài liệu <i class="fa fa-arrow-right"></i>`;
   }
 }
 
@@ -14,14 +13,18 @@ function toggleDocCategory(el) {
   const folderIcon = el.querySelector(".doc-folder-icon");
 
   if (items && folderIcon) {
-    if (items.style.display === "none") {
-      items.style.display = "block";
-      folderIcon.classList.remove("fa-folder");
-      folderIcon.classList.add("fa-folder-open");
-    } else {
-      items.style.display = "none";
+    if (items.classList.contains("expanded")) {
+      items.classList.remove("expanded");
+      el.classList.remove("expanded");
+      items.style.maxHeight = "0px";
       folderIcon.classList.remove("fa-folder-open");
       folderIcon.classList.add("fa-folder");
+    } else {
+      items.classList.add("expanded");
+      el.classList.add("expanded");
+      items.style.maxHeight = `${items.scrollHeight}px`;
+      folderIcon.classList.remove("fa-folder");
+      folderIcon.classList.add("fa-folder-open");
     }
   }
 }

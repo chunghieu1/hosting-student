@@ -8,6 +8,7 @@ const partners = [
     logo: "/assets/logos/daihocquocgiahanoi.webp",
   },
   {
+    name: "ĐH Kinh tế Quốc dân",
     logo: "/assets/logos/daihockinhtequocdan.webp",
   },
   {

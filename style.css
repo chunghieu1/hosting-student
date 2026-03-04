@@ -497,6 +497,54 @@ h1 {
 }
 
 /* RESPONSIVE */
+@media (max-width: 1200px) {
+  body {
+    padding: 28px 16px;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .partners-section,
+  .about-section,
+  .faq-section,
+  .product-section {
+    padding: 20px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .card h3 {
+    font-size: 18px;
+  }
+
+  .spec {
+    font-size: 14px;
+  }
+
+  .carousel-container {
+    min-height: 120px;
+    padding: 0;
+  }
+
+  .carousel-item {
+    min-width: 120px;
+  }
+
+  .carousel-item img {
+    max-width: 90px;
+    max-height: 90px;
+  }
+}
+
 @media (max-width: 992px) {
   .product-grid,
   .quick-highlight,

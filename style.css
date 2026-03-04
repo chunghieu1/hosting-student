@@ -20,6 +20,13 @@ h1 {
   margin-bottom: 40px;
 }
 
+.logo {
+  max-width: 240px;
+  margin-bottom: 12px;
+  text-align: center;
+  align-items: center;
+}
+
 .hero {
   background: linear-gradient(135deg, #fff 0%, #ffe9e8 100%);
   border: 1px solid #ffd2cf;
@@ -148,7 +155,6 @@ h1 {
   line-height: 1.6;
 }
 
-
 /* GRID PRODUCTS */
 .product-grid {
   display: grid;
@@ -230,6 +236,9 @@ h1 {
 /* PARTNERS CAROUSEL */
 .partners-section {
   margin-bottom: 40px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 24px;
 }
 
 .partners-section h2 {

@@ -1,33 +1,86 @@
 const partners = [
   {
     name: "ĐH Bách Khoa Hà Nội",
-    logo: "/assets/images/logo_zhost.webp",
-    url: "#",
+    logo: "/assets/logos/daihocbachkhoahanoi.webp",
   },
   {
     name: "ĐH Quốc Gia Hà Nội",
-    logo: "/assets/images/hosting-icon.webp",
-    url: "#",
+    logo: "/assets/logos/daihocquocgiahanoi.webp",
   },
   {
-    name: "ĐH Kinh tế TP.HCM",
-    logo: "/assets/images/logo_zhost.webp",
-    url: "#",
+    logo: "/assets/logos/daihockinhtequocdan.webp",
   },
   {
-    name: "ĐH FPT",
-    logo: "/assets/images/hosting-icon.webp",
-    url: "#",
+    name: "ĐH Quốc Gia TP.HCM",
+    logo: "/assets/logos/daihocquocgiatphcm.webp",
+  },
+  {
+    name: "Học viện Chính trị Quốc gia Hồ Chí Minh",
+    logo: "/assets/logos/hocvienchinhtriquocgiatphcm.webp",
+  },
+  {
+    name: "ĐH Huế",
+    logo: "/assets/logos/daihochue.webp",
   },
   {
     name: "ĐH Cần Thơ",
-    logo: "/assets/images/logo_zhost.webp",
-    url: "#",
+    logo: "/assets/logos/daihoccantho.webp",
   },
   {
-    name: "ĐH Đà Nẵng",
-    logo: "/assets/images/hosting-icon.webp",
-    url: "#",
+    name: "Học viện Bưu chính Viễn thông",
+    logo: "/assets/logos/hocvienbuuchinhvienthong.webp",
+  },
+  {
+    name: "VinSchool",
+    logo: "/assets/logos/vinschool.webp",
+  },
+  {
+    name: "Vin University",
+    logo: "/assets/logos/vinuni.webp",
+  },
+  {
+    name: "EQUEST",
+    logo: "/assets/logos/equest.webp",
+  },
+  {
+    name: "ĐH Công Nghệ",
+    logo: "/assets/logos/uet.webp",
+  },
+  {
+    name: "ĐH Thương Mại",
+    logo: "/assets/logos/tmu.webp",
+  },
+  {
+    name: "ĐH FPT",
+    logo: "/assets/logos/fpt.webp",
+  },
+  {
+    name: "ĐH Y Hà Nội",
+    logo: "/assets/logos/daihocyhanoi.webp",
+  },
+  {
+    name: "ĐH Dược Hà Nội",
+    logo: "/assets/logos/daihocduochanoi.webp",
+  },
+  {
+    name: "ĐH Sư Phạm Hà Nội",
+    logo: "/assets/logos/daihocsuphamhanoi.webp",
+  },
+  {
+    name: "Học viện Ngoại Giao Việt Nam",
+    logo: "/assets/logos/hocvienngoaigiaovietnam.webp",
+  },
+  {
+    name: "ĐH Tôn Đức Thắng",
+    logo: "/assets/logos/daihoctonducthang.webp",
+  },
+  {
+    name: "ĐH Sài Gòn",
+    logo: "/assets/logos/daihocsaigon.webp",
+  },
+  {
+    name: "ĐH Xây Dựng",
+    logo: "/assets/logos/daihocxaydung.webp",
   },
 ];
 
@@ -49,10 +102,7 @@ function initPartnersCarousel(items, autoplayDelay = 2500) {
     const item = document.createElement("div");
     item.className = "carousel-item";
     item.innerHTML = `
-      <a href="${partner.url}" aria-label="${partner.name}">
         <img src="${partner.logo}" alt="${partner.name}" loading="lazy" />
-        <p class="partner-name">${partner.name}</p>
-      </a>
     `;
     track.appendChild(item);
     return item;
@@ -64,7 +114,9 @@ function initPartnersCarousel(items, autoplayDelay = 2500) {
   const getItemStep = () => {
     const sample = renderedItems[0];
     const itemWidth = sample.getBoundingClientRect().width;
-    const gap = Number.parseFloat(getComputedStyle(track).columnGap || getComputedStyle(track).gap || 0);
+    const gap = Number.parseFloat(
+      getComputedStyle(track).columnGap || getComputedStyle(track).gap || 0,
+    );
     return itemWidth + gap;
   };
 

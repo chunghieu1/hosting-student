@@ -16,7 +16,11 @@
     />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="author" content="Zhost" />
+    <meta name="theme-color" content="#e03127" />
+    <meta name="format-detection" content="telephone=no" />
     <link rel="canonical" href="https://zhost.vn/hosting-student" />
+    <link rel="alternate" hreflang="vi-VN" href="https://zhost.vn/hosting-student" />
+    <link rel="alternate" hreflang="x-default" href="https://zhost.vn/hosting-student" />
     <meta property="og:locale" content="vi_VN" />
     <meta property="og:type" content="website" />
     <meta
@@ -33,6 +37,7 @@
       property="og:image"
       content="https://zhost.vn/assets/images/hosting-icon.webp"
     />
+    <meta property="og:image:alt" content="Biểu tượng Hosting Student của Zhost" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
@@ -46,10 +51,19 @@
       name="twitter:image"
       content="https://zhost.vn/assets/images/hosting-icon.webp"
     />
+    <meta name="twitter:image:alt" content="Biểu tượng Hosting Student của Zhost" />
     <link
       rel="shortcut icon"
       href="/assets/images/favicon_zhost.webp"
       type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link
+      rel="preload"
+      as="image"
+      href="/assets/images/logo_zhost.webp"
+      imagesrcset="/assets/images/logo_zhost.webp"
+      fetchpriority="high"
     />
     <link rel="stylesheet" href="style.css" />
     <link
@@ -62,11 +76,95 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Zhost",
+        "url": "https://zhost.vn",
+        "logo": "https://zhost.vn/assets/images/logo_zhost.webp",
+        "sameAs": ["https://zhost.vn"]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
         "@type": "WebPage",
         "name": "Hosting Student Zhost",
         "description": "Dịch vụ Hosting Student dành cho sinh viên với hiệu năng cao và chi phí tối ưu.",
         "url": "https://zhost.vn/hosting-student",
-        "inLanguage": "vi"
+        "inLanguage": "vi",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "Zhost",
+          "url": "https://zhost.vn"
+        },
+        "primaryImageOfPage": "https://zhost.vn/assets/images/hosting-icon.webp"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Trang chủ",
+            "item": "https://zhost.vn"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Hosting Student",
+            "item": "https://zhost.vn/hosting-student"
+          }
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Bảng giá Hosting Student Zhost",
+        "itemListElement": [
+          {
+            "@type": "Product",
+            "position": 1,
+            "name": "Z-Student 01",
+            "description": "Hosting Student phù hợp website cá nhân hoặc đồ án cơ bản.",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "VND",
+              "price": "3000",
+              "url": "https://zhost.vn/hosting-student#goi-hosting",
+              "availability": "https://schema.org/InStock"
+            }
+          },
+          {
+            "@type": "Product",
+            "position": 2,
+            "name": "Z-Student 02",
+            "description": "Hosting Student cân bằng chi phí và hiệu năng cho blog/website môn học.",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "VND",
+              "price": "5000",
+              "url": "https://zhost.vn/hosting-student#goi-hosting",
+              "availability": "https://schema.org/InStock"
+            }
+          },
+          {
+            "@type": "Product",
+            "position": 3,
+            "name": "Z-Student 03",
+            "description": "Hosting Student tài nguyên cao cho dự án cần xử lý tốt hơn.",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "VND",
+              "price": "7000",
+              "url": "https://zhost.vn/hosting-student#goi-hosting",
+              "availability": "https://schema.org/InStock"
+            }
+          }
+        ]
       }
     </script>
     <script type="application/ld+json">
@@ -120,6 +218,10 @@
   </head>
   <body>
     <div class="container">
+      <nav aria-label="Điều hướng nhanh" class="quick-nav">
+        <a href="#goi-hosting">Bảng giá</a>
+        <a href="#faq-hosting-student">FAQ</a>
+      </nav>
       <header class="hero" aria-labelledby="hosting-student-title">
         <div style="display: flex; justify-content: center">
           <a href="https://zhost.vn">
@@ -127,6 +229,10 @@
               src="/assets/images/logo_zhost.webp"
               alt="Zhost Logo"
               class="logo"
+              width="160"
+              height="56"
+              fetchpriority="high"
+              decoding="async"
             />
           </a>
         </div>
@@ -166,6 +272,7 @@
         >
       </header>
 
+      <main>
       <section
         class="quick-highlight"
         aria-label="Điểm nổi bật Hosting Student"
@@ -217,7 +324,11 @@
               <div>
                 <img
                   src="/assets/images/hosting-icon.webp"
-                  alt="Z-Student 01"
+                  alt="Biểu tượng gói Z-Student 01"
+                  loading="lazy"
+                  decoding="async"
+                  width="80"
+                  height="80"
                 />
               </div>
             </div>
@@ -327,7 +438,11 @@
               <div>
                 <img
                   src="/assets/images/hosting-icon.webp"
-                  alt="Z-Student 02"
+                  alt="Biểu tượng gói Z-Student 02"
+                  loading="lazy"
+                  decoding="async"
+                  width="80"
+                  height="80"
                 />
               </div>
             </div>
@@ -437,7 +552,11 @@
               <div>
                 <img
                   src="/assets/images/hosting-icon.webp"
-                  alt="Z-Student 03"
+                  alt="Biểu tượng gói Z-Student 03"
+                  loading="lazy"
+                  decoding="async"
+                  width="80"
+                  height="80"
                 />
               </div>
             </div>
@@ -764,9 +883,10 @@
           </div>
         </div>
       </div>
+      </main>
     </div>
-    <script src="/js/spec-toggle.js"></script>
-    <script src="/js/doc-counter.js"></script>
-    <script src="/js/carousel.js"></script>
+    <script src="/js/spec-toggle.js" defer></script>
+    <script src="/js/doc-counter.js" defer></script>
+    <script src="/js/carousel.js" defer></script>
   </body>
 </html>

@@ -19,6 +19,27 @@ html {
   margin: auto;
 }
 
+.quick-nav {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-bottom: 12px;
+}
+
+.quick-nav a {
+  background: #fff;
+  color: #e03127;
+  border: 1px solid #f7cbc8;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.quick-nav a:hover {
+  background: #fff3f2;
+}
+
 h1 {
   text-align: center;
   margin-bottom: 40px;

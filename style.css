@@ -92,7 +92,9 @@ h1 {
   padding: 11px 16px;
   border-radius: 8px;
   font-weight: 600;
-  transition: transform 0.25s ease, box-shadow 0.25s ease,
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
     background-color 0.25s ease;
 }
 
@@ -178,8 +180,12 @@ h1 {
   background: #fff;
   display: grid;
   grid-template-rows: auto 0fr;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease,
-    background-color 0.3s ease, transform 0.3s ease, grid-template-rows 0.3s ease;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease,
+    transform 0.3s ease,
+    grid-template-rows 0.3s ease;
 }
 
 .faq-section details[open] {
@@ -222,8 +228,13 @@ h1 {
   border: 1px solid #f7cbc8;
   border-radius: 12px;
   padding: 25px;
-  box-shadow: 0 12px 28px rgba(224, 49, 39, 0.14), 0 4px 10px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  box-shadow:
+    0 12px 28px rgba(224, 49, 39, 0.14),
+    0 4px 10px rgba(0, 0, 0, 0.06);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
 }
 
 /* title area with icon and image */
@@ -249,7 +260,9 @@ h1 {
 .card:hover {
   transform: translateY(-6px);
   border-color: #e03127;
-  box-shadow: 0 18px 34px rgba(224, 49, 39, 0.2), 0 8px 18px rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0 18px 34px rgba(224, 49, 39, 0.2),
+    0 8px 18px rgba(0, 0, 0, 0.1);
 }
 
 .card h3 {
@@ -448,7 +461,9 @@ h1 {
   font-weight: 500;
   color: #333;
   user-select: none;
-  transition: color 0.25s ease, transform 0.25s ease;
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
 }
 
 .doc-category-title:hover {
@@ -469,7 +484,10 @@ h1 {
   overflow: hidden;
   opacity: 0;
   transform: translateY(-4px);
-  transition: max-height 0.35s ease, opacity 0.3s ease, transform 0.3s ease;
+  transition:
+    max-height 0.35s ease,
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
 
 .doc-items.expanded {
@@ -489,7 +507,9 @@ h1 {
   font-size: 14px;
   color: #333;
   text-decoration: none;
-  transition: color 0.2s ease, transform 0.2s ease;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .doc-item:hover {
@@ -612,14 +632,21 @@ h1 {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: linear-gradient(45deg, transparent 50%, #e03127 50%),
+  background-image:
+    linear-gradient(45deg, transparent 50%, #e03127 50%),
     linear-gradient(135deg, #e03127 50%, transparent 50%);
-  background-position: calc(100% - 18px) calc(50% - 3px),
+  background-position:
+    calc(100% - 18px) calc(50% - 3px),
     calc(100% - 12px) calc(50% - 3px);
-  background-size: 6px 6px, 6px 6px;
+  background-size:
+    6px 6px,
+    6px 6px;
   background-repeat: no-repeat;
-  transition: border-color 0.25s ease, box-shadow 0.25s ease,
-    background-color 0.25s ease, transform 0.25s ease;
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease,
+    transform 0.25s ease;
 }
 
 .payment-cycle:hover {
@@ -672,6 +699,7 @@ h1 {
   font-size: 16px;
   cursor: pointer;
   text-align: center;
+  text-decoration: none;
 }
 .order-btn:hover {
   background: #d62828;
@@ -692,7 +720,10 @@ h1 {
   overflow: hidden;
   opacity: 0;
   transform: translateY(-4px);
-  transition: max-height 0.35s ease, opacity 0.3s ease, transform 0.3s ease;
+  transition:
+    max-height 0.35s ease,
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
 
 .spec-extra-group.expanded {
@@ -703,7 +734,9 @@ h1 {
 
 .toggle-specs .spec-toggle-icon {
   margin-left: 4px;
-  transition: transform 0.25s ease, color 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    color 0.25s ease;
 }
 .toggle-specs:hover {
   color: #d62828;

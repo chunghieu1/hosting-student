@@ -50,6 +50,12 @@ h1 {
   margin-bottom: 12px;
 }
 
+.logo-child {
+  max-width: 148px;
+  height: auto;
+  padding: 8px;
+}
+
 .hero {
   background: linear-gradient(135deg, #fff 0%, #ffe9e8 100%);
   border: 1px solid #ffd2cf;
@@ -782,7 +788,6 @@ h1 {
 .toggle-specs:hover .spec-toggle-icon {
   color: #d62828;
 }
-
 
 .site-footer {
   margin-top: 32px;

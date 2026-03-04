@@ -324,7 +324,7 @@
               xử lý.
             </p>
             <div class="about-columns">
-              <div>
+              <div class="about-column">
                 <h3>Đủ mạnh - phù hợp với</h3>
                 <ul>
                   <li>Website cá nhân / Portfolio</li>
@@ -333,7 +333,7 @@
                   <li>Website bán hàng nhỏ, thử nghiệm kinh doanh</li>
                 </ul>
               </div>
-              <div>
+              <div class="about-column">
                 <h3>Lý do nên chọn Hosting Student tại Zhost</h3>
                 <ul>
                   <li>
@@ -387,6 +387,48 @@
             </button>
           </div>
         </div>
+
+        <section
+          class="promo-countdown"
+          aria-labelledby="khuyen-mai-hosting-student"
+        >
+          <div class="promo-countdown-content">
+            <p class="promo-tag">🔥 Ưu đãi giới hạn cho sinh viên</p>
+            <h2 id="khuyen-mai-hosting-student">
+              Khuyến mãi Hosting Student - giảm đến 35%
+            </h2>
+            <p>
+              Đăng ký gói Hosting Student trong thời gian ưu đãi để nhận mức giá
+              tốt hơn và tặng SSL miễn phí. Bạn có thể chủ động thay đổi mốc
+              thời gian bằng thuộc tính
+              <code>data-countdown-target</code> bên dưới.
+            </p>
+          </div>
+          <div
+            class="countdown-grid"
+            data-countdown-target="2026-12-31T23:59:59+07:00"
+            role="timer"
+            aria-live="polite"
+          >
+            <div class="countdown-item">
+              <span class="countdown-value" data-unit="days">00</span>
+              <span class="countdown-label">Ngày</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-value" data-unit="hours">00</span>
+              <span class="countdown-label">Giờ</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-value" data-unit="minutes">00</span>
+              <span class="countdown-label">Phút</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-value" data-unit="seconds">00</span>
+              <span class="countdown-label">Giây</span>
+            </div>
+          </div>
+          <p class="promo-note" data-countdown-message></p>
+        </section>
 
         <section
           id="goi-hosting"
@@ -1073,5 +1115,6 @@
     <script src="/js/spec-toggle.js" defer></script>
     <script src="/js/doc-counter.js" defer></script>
     <script src="/js/carousel.js" defer></script>
+    <script src="/js/promo-countdown.js" defer></script>
   </body>
 </html>

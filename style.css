@@ -314,14 +314,17 @@ h1 {
   align-items: center;
   margin-bottom: 15px;
 }
+
 .title h3 {
   display: flex;
   align-items: center;
   margin: 0;
 }
+
 .title .price {
   margin-top: 0;
 }
+
 .title img {
   max-width: 80px;
   height: auto;
@@ -728,6 +731,7 @@ h1 {
 }
 
 @media (max-width: 992px) {
+
   .product-grid,
   .quick-highlight,
   .about-columns {
@@ -754,6 +758,7 @@ h1 {
 }
 
 @media (max-width: 576px) {
+
   .product-grid,
   .quick-highlight,
   .about-columns {
@@ -872,16 +877,19 @@ h1 {
   color: #e03127;
   text-align: center;
 }
+
 .price .from {
   font-size: 14px;
   font-weight: normal;
   color: #333;
   margin-bottom: 4px;
 }
+
 .price .amount {
   font-size: 24px;
   font-weight: bold;
 }
+
 .price .per-month {
   font-size: 14px;
   font-weight: normal;
@@ -903,6 +911,7 @@ h1 {
   text-align: center;
   text-decoration: none;
 }
+
 .order-btn:hover {
   background: #d62828;
 }
@@ -940,9 +949,11 @@ h1 {
     transform 0.25s ease,
     color 0.25s ease;
 }
+
 .toggle-specs:hover {
   color: #d62828;
 }
+
 .toggle-specs:hover .spec-toggle-icon {
   color: #d62828;
 }
@@ -1057,6 +1068,7 @@ h1 {
 }
 
 @media (max-width: 992px) {
+
   .footer-inner,
   .footer-branches {
     grid-template-columns: 1fr;

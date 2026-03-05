@@ -1,5 +1,37 @@
 const partners = [
   {
+    name: "Cao Đẳng Nghề Bách Khoa Hà Nội",
+    logo: "https://zhost.education/assets/logos/caodangnghebachkhoahanoi.webp",
+  },
+  {
+    name: "ĐH FPT",
+    logo: "https://zhost.education/assets/logos/fpt.webp",
+  },
+  {
+    name: "ĐH Hà Nội",
+    logo: "https://zhost.education/assets/logos/daihochn.webp",
+  },
+  {
+    name: "Vin University",
+    logo: "https://zhost.education/assets/logos/vinuni.webp",
+  },
+  {
+    name: "VinSchool",
+    logo: "https://zhost.education/assets/logos/vinschool.webp",
+  },
+  {
+    name: "EQUEST",
+    logo: "https://zhost.education/assets/logos/equest.webp",
+  },
+  {
+    name: "1School",
+    logo: "https://zhost.education/assets/logos/1school.webp",
+  },
+  {
+    name: "True North School",
+    logo: "https://zhost.education/assets/logos/truenorth.webp",
+  },
+  {
     name: "ĐH Bách Khoa Hà Nội",
     logo: "https://zhost.education/assets/logos/daihocbachkhoahanoi.webp",
   },
@@ -32,28 +64,12 @@ const partners = [
     logo: "https://zhost.education/assets/logos/hocvienbuuchinhvienthong.webp",
   },
   {
-    name: "VinSchool",
-    logo: "https://zhost.education/assets/logos/vinschool.webp",
-  },
-  {
-    name: "Vin University",
-    logo: "https://zhost.education/assets/logos/vinuni.webp",
-  },
-  {
-    name: "EQUEST",
-    logo: "https://zhost.education/assets/logos/equest.webp",
-  },
-  {
     name: "ĐH Công Nghệ",
     logo: "https://zhost.education/assets/logos/uet.webp",
   },
   {
     name: "ĐH Thương Mại",
     logo: "https://zhost.education/assets/logos/tmu.webp",
-  },
-  {
-    name: "ĐH FPT",
-    logo: "https://zhost.education/assets/logos/fpt.webp",
   },
   {
     name: "ĐH Y Hà Nội",

@@ -957,10 +957,10 @@ h1 {
 }
 
 .footer-inner {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  grid-template-columns: minmax(280px, 0.85fr) minmax(0, 1.45fr);
   gap: 28px;
 }
 
@@ -972,7 +972,7 @@ h1 {
   padding-bottom: 16px;
 }
 
-.footer-brand img {
+.footer-main-logo {
   max-width: 100%;
   height: auto;
 }
@@ -992,21 +992,25 @@ h1 {
 
 .footer-branches {
   display: grid;
-  gap: 22px;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 30px;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
 }
 
 .footer-branches h3 {
   text-transform: uppercase;
-  font-size: clamp(30px, 2.2vw, 38px);
+  font-size: clamp(24px, 1.6vw, 32px);
   margin-bottom: 10px;
   line-height: 1.15;
 }
 
 .footer-branches p {
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.65;
   margin-bottom: 8px;
+}
+
+.footer-branches section {
+  min-width: 0;
 }
 
 .footer-branches a {
@@ -1045,5 +1049,37 @@ h1 {
 
   .footer-branches h3 {
     font-size: 24px;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-inner,
+  .footer-branches {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .site-footer {
+    padding: 26px 16px;
+  }
+
+  .footer-brand p,
+  .footer-branches p {
+    font-size: 14px;
+  }
+
+  .footer-certs {
+    flex-wrap: nowrap;
+    gap: 6px;
+  }
+
+  .footer-certs .logo-child {
+    max-width: calc((100% - 12px) / 3);
+    padding: 4px;
+  }
+
+  .footer-branches h3 {
+    font-size: 20px;
   }
 }

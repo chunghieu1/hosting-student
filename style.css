@@ -232,21 +232,55 @@ h1 {
 }
 
 .faq-section summary {
+  position: relative;
+  padding-right: 24px;
   font-weight: 600;
   cursor: pointer;
   color: #222;
   list-style: none;
 }
 
+.faq-section summary::after {
+  content: "\f078";
+  font-family: "Font Awesome 7 Free";
+  font-weight: 900;
+  position: absolute;
+  right: 0;
+  top: 2px;
+  color: #e03127;
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.faq-section details[open] summary::after {
+  transform: rotate(180deg);
+}
+
 .faq-section summary::-webkit-details-marker {
   display: none;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-6px);
+  transition:
+    max-height 0.35s ease,
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.faq-section details[open] .faq-answer {
+  max-height: 320px;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .faq-section p {
   margin-top: 10px;
   color: #555;
   line-height: 1.6;
-  overflow: hidden;
 }
 
 /* GRID PRODUCTS */
@@ -701,7 +735,8 @@ h1 {
   }
 
   .hero-layout,
-  .footer-inner {
+  .footer-inner,
+  .footer-branches {
     grid-template-columns: 1fr;
   }
 
@@ -808,7 +843,8 @@ h1 {
     border-color 0.25s ease,
     box-shadow 0.25s ease,
     background-color 0.25s ease,
-    transform 0.25s ease;
+    transform 0.25s ease,
+    background-position 0.25s ease;
 }
 
 .payment-cycle:hover {
@@ -820,6 +856,10 @@ h1 {
   outline: none;
   border-color: #e03127;
   box-shadow: 0 0 0 3px rgba(224, 49, 39, 0.18);
+  transform: translateY(-1px);
+  background-position:
+    calc(100% - 18px) calc(50% - 1px),
+    calc(100% - 12px) calc(50% - 1px);
 }
 
 .payment-cycle option {
@@ -913,6 +953,7 @@ h1 {
   color: #f5f5f5;
   border-radius: 14px;
   padding: 36px 24px;
+  overflow: hidden;
 }
 
 .footer-inner {
@@ -931,6 +972,11 @@ h1 {
   padding-bottom: 16px;
 }
 
+.footer-brand img {
+  max-width: 100%;
+  height: auto;
+}
+
 .footer-certs {
   display: flex;
   flex-wrap: wrap;
@@ -947,16 +993,57 @@ h1 {
 .footer-branches {
   display: grid;
   gap: 22px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .footer-branches h3 {
   text-transform: uppercase;
-  font-size: 28px;
+  font-size: clamp(30px, 2.2vw, 38px);
   margin-bottom: 10px;
+  line-height: 1.15;
 }
 
 .footer-branches p {
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 8px;
+}
+
+.footer-branches a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-branches p i {
+  margin-right: 4px;
+}
+
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 24px 16px;
+    border-radius: 12px;
+  }
+
+  .footer-inner {
+    gap: 20px;
+  }
+
+  .footer-brand p {
+    font-size: 15px;
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+  }
+
+  .footer-certs {
+    justify-content: flex-start;
+  }
+
+  .footer-branches {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .footer-branches h3 {
+    font-size: 24px;
+  }
 }

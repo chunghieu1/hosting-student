@@ -1009,6 +1009,10 @@ h1 {
   margin-bottom: 8px;
 }
 
+.footer-branches p:hover {
+  text-decoration: underline;
+}
+
 .footer-branches section {
   min-width: 0;
 }

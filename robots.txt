@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://zhost.vn/sitemap.xml
+Sitemap: https://zhost.education/sitemap.xml

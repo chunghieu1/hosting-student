@@ -99,6 +99,7 @@ const partners = [
     name: "ĐH Xây Dựng",
     logo: "https://zhost.education/assets/logos/daihocxaydung.webp",
   },
+  
 ];
 
 function initPartnersCarousel(items, autoplayDelay = 2500) {
